@@ -3,7 +3,6 @@ from flask import Flask
 from flask.testing import FlaskClient
 from app import create_items_table, app
 
-print("test file")
 @pytest.fixture
 def client() -> FlaskClient:
     app.config['TESTING'] = True
